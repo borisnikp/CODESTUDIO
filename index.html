@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="hr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="theme-color" content="#08070c" />
+<title>Code Studio — Agencija za web razvoj, digitalni marketing i AI automatizaciju</title>
+<meta name="description" content="Code Studio je digitalna agencija koja izrađuje brze web stranice, vodi marketing temeljen na podacima i razvija AI automatizacije koje skaliraju ozbiljne poslove." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="noise" aria-hidden="true"></div>
+
+<!-- ───────────── NAVIGACIJA ───────────── -->
+<header class="nav" id="nav">
+  <a href="#" class="brand" aria-label="Code Studio početna">
+    <span class="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 12 L18 6 L30 12 L30 24 L18 30 L6 24 Z" stroke="url(#g1)" stroke-width="1.6"/>
+        <path d="M14 16 L11 18 L14 20 M22 16 L25 18 L22 20" stroke="url(#g1)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="36" y2="36">
+            <stop stop-color="#38BDF8"/><stop offset="1" stop-color="#8B5CF6"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </span>
+    <span class="brand-text">
+      <strong>Code Studio</strong>
+      <em>Digital · Web · AI</em>
+    </span>
+  </a>
+
+  <nav class="nav-links" aria-label="Primarno">
+    <a href="#services">Usluge</a>
+    <a href="#work">Radovi</a>
+    <a href="#process">Proces</a>
+    <a href="#testimonials">Recenzije</a>
+    <a href="#contact">Kontakt</a>
+  </nav>
+
+  <div class="nav-cta">
+    <button class="theme-toggle" aria-label="Promijeni temu" type="button">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5"/></svg>
+    </button>
+    <a href="#contact" class="btn btn-primary btn-sm">
+      <span>Pokreni projekt</span>
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+    </a>
+    <button class="menu-btn" aria-label="Otvori izbornik" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ───────────── HERO ───────────── -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="hero-grid"></div>
+  </div>
+
+  <div class="hero-inner">
+
+    <h1 class="hero-title">
+      <em class="em-white">Web</em> koji ulijeva povjerenje.<br/>
+      <em>Marketing</em> koji dovodi kupce.<br/>
+      <em>AI</em> koji štedi sate.
+    </h1>
+
+    <p class="hero-sub">
+      Trebaš više klijenata, manje gubljenja vremena i web stranicu koja radi dok spavaš. Gradimo ti sve što treba — stranicu koja prodaje, marketing koji donosi kupce i automatizacije koje zamjenjuju 20 sati ručnog rada tjedno.
+    </p>
+
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-primary">
+        <span>Rezerviraj besplatni razgovor</span>
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+      </a>
+
+      <a href="#work" class="btn btn-ghost">
+        <span class="play-circle" aria-hidden="true">
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M5 3.5v9l8-4.5z"/></svg>
+        </span>
+        <span class="btn-stack">
+          <strong>Pogledaj reel</strong>
+          <em>Odabrani radovi · 90s</em>
+        </span>
+      </a>
+
+      <div class="hero-proof">
+        <div class="avatars">
+          <span style="background:linear-gradient(135deg,#38BDF8,#a855f7)">L</span>
+          <span style="background:linear-gradient(135deg,#60a5fa,#a855f7)">M</span>
+          <span style="background:linear-gradient(135deg,#34d399,#06b6d4)">D</span>
+          <span style="background:linear-gradient(135deg,#fb923c,#38BDF8)">K</span>
+        </div>
+        <div class="proof-text">
+          <strong>4,9 / 5</strong>
+          <em>Od preko 80 osnivača</em>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-meta">
+      <div><strong>120+</strong><em>Isporučenih projekata</em></div>
+      <div><strong>$14M+</strong><em>Prihoda za klijente</em></div>
+      <div><strong>27</strong><em>AI workflowa u produkciji</em></div>
+      <div><strong>4,9★</strong><em>Prosječna ocjena klijenata</em></div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────── MARQUEE ───────────── -->
+<section class="marquee" aria-label="Surađujemo s">
+  <div class="marquee-head">
+    <span>Povjerenje brzih timova i ambicioznih osnivača</span>
+    <i></i>
+  </div>
+  <div class="marquee-track">
+    <div class="marquee-row">
+      <span>◇ Linear Labs</span><span>✶ Northwave</span><span>◆ Brightline</span><span>⬢ Mercura</span>
+      <span>◎ Foundry &amp; Co</span><span>▲ Atlas Outdoor</span><span>✦ Helio Studio</span><span>◇ Vantage AI</span>
+      <span>⬡ Orbit Health</span><span>✶ Northwave</span><span>◆ Brightline</span><span>⬢ Mercura</span>
+    </div>
+    <div class="marquee-row" aria-hidden="true">
+      <span>◇ Linear Labs</span><span>✶ Northwave</span><span>◆ Brightline</span><span>⬢ Mercura</span>
+      <span>◎ Foundry &amp; Co</span><span>▲ Atlas Outdoor</span><span>✦ Helio Studio</span><span>◇ Vantage AI</span>
+      <span>⬡ Orbit Health</span><span>✶ Northwave</span><span>◆ Brightline</span><span>⬢ Mercura</span>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────── EKSPERTIZA ───────────── -->
+<section class="expertise" id="about">
+  <div class="container two-col">
+    <aside class="exp-card">
+      <div class="exp-card-inner">
+        <h3>Spremni podići svoju digitalnu prisutnost?</h3>
+        <p>Izradimo prilagođenu strategiju koja odgovara tvom poslu — web, marketing i AI kao jedan sustav.</p>
+        <a href="#contact" class="btn btn-primary btn-sm">
+          <span>Besplatne konzultacije</span>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </a>
+      </div>
+      <div class="exp-card-grid"></div>
+    </aside>
+
+    <div class="exp-content">
+      <span class="eyebrow"><i class="dot"></i> Naša ekspertiza</span>
+      <h2>Inženjerski izrađene stranice.<br/>Mjerljivi marketing.<br/><em>Pametne AI automatizacije.</em></h2>
+      <p class="lead">
+        Code Studio je mali iskusan tim — inženjeri, marketingaši i AI graditelji — koji isporučuje radove kakve agencije dvostruko veće ne mogu.
+        Svaki projekt gradi se oko jednog broja: onog koji pomiče tvoj posao.
+      </p>
+
+      <div class="exp-split">
+        <div>
+          <h4>U čemu smo najbolji</h4>
+          <ul class="check">
+            <li>Dizajn i web razvoj</li>
+            <li>SEO i sustavi sadržaja</li>
+            <li>Plaćeno oglašavanje (Meta · Google)</li>
+            <li>Strategija brenda i identitet</li>
+            <li>Prilagođene AI automatizacije i agenti</li>
+            <li>Optimizacija stope konverzije</li>
+          </ul>
+        </div>
+        <div class="exp-stat">
+          <div class="big-number">7+<sup></sup></div>
+          <p><strong>Godina gradimo</strong> stranice i sustave rasta za B2B i e-commerce brendove na EU i američkom tržištu.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────── USLUGE ───────────── -->
+<section class="services" id="services">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow"><i class="dot"></i> Naše ključne usluge</span>
+      <h2>Digitalna rješenja koja <em>donose stvarne rezultate</em></h2>
+      <p>Tri discipline, jedan studio. Odaberi što ti treba — ili pokreni cijeli sustav od početka do kraja.</p>
+    </header>
+
+    <div class="service-grid">
+      <article class="service" data-accent="violet">
+        <header>
+          <span class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 6 3 12l5 6M16 6l5 6-5 6M14 4l-4 16"/></svg>
+          </span>
+          <h3>Izrada web stranica</h3>
+        </header>
+        <p>Brze, moderne i pristupačne web stranice optimizirane za pretraživače i konverziju. Od landing stranica do kompleksnih višejezičnih sajtova — isporučujemo produkcijsku kvalitetu u roku.</p>
+        <ul class="tags"><li>Next.js</li><li>Shopify</li><li>Webflow</li><li>Headless CMS</li></ul>
+        <a href="#contact" class="service-link">Pogledaj detalje <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+      </article>
+
+      <article class="service" data-accent="pink">
+        <header>
+          <span class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </span>
+          <h3>Izrada aplikacija</h3>
+        </header>
+        <p>Prilagođene web i mobilne aplikacije — od internih alata i SaaS platformi do e-commerce rješenja. Gradimo na modernim stackovima s fokusom na skalabilnost i jednostavnost korištenja.</p>
+        <ul class="tags"><li>React</li><li>Node.js</li><li>PostgreSQL</li><li>REST API</li></ul>
+        <a href="#contact" class="service-link">Pogledaj detalje <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+      </article>
+
+      <article class="service" data-accent="cyan">
+        <header>
+          <span class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17V7m4 10V11m4 6V5m4 12V9m4 8V13"/></svg>
+          </span>
+          <h3>Digitalni marketing</h3>
+        </header>
+        <p>Plaćeni oglasi, SEO, email tokovi i sustavi sadržaja koji donose mjerljive rezultate. Vodimo tjedne eksperimente i izvještavamo jednostavnim jezikom — bez praznih metrika.</p>
+        <ul class="tags"><li>Meta Ads</li><li>Google Ads</li><li>SEO</li><li>Email marketing</li></ul>
+        <a href="#contact" class="service-link">Pogledaj detalje <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+      </article>
+
+      <article class="service" data-accent="amber">
+        <header>
+          <span class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>
+          </span>
+          <h3>AI Booking Sistem</h3>
+        </header>
+        <p>Pametni sustav rezervacija koji automatski upravlja terminima, šalje podsjetnike i prilagođava se kapacitetu. Klijenti rezerviraju 24/7 — bez telefona, bez ručnog unosa.</p>
+        <ul class="tags"><li>Claude AI</li><li>n8n</li><li>Calendar API</li><li>WhatsApp</li></ul>
+        <a href="#contact" class="service-link">Pogledaj detalje <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+      </article>
+
+      <article class="service" data-accent="emerald">
+        <header>
+          <span class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </span>
+          <h3>AI Agent za podršku</h3>
+        </header>
+        <p>Chatbot koji automatski odgovara na 80% upita klijenata — radno vrijeme, cijene, status, FAQ — na web stranici, WhatsAppu ili Instagramu. Radi 24/7 bez zaposlenika.</p>
+        <ul class="tags"><li>Claude AI</li><li>OpenAI</li><li>WhatsApp API</li><li>Zapier</li></ul>
+        <a href="#contact" class="service-link">Pogledaj detalje <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+      </article>
+
+      <article class="service" data-accent="rose">
+        <header>
+          <span class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 3h18v4H3zM3 10h12v11H3zM17 10l2 2 2-2M19 12v9"/><circle cx="19" cy="8" r="0"/></svg>
+          </span>
+          <h3>AI Analiza i izvještaji</h3>
+        </header>
+        <p>Agent koji automatski prikuplja podatke iz svih kanala (GA4, Meta Ads, prodaja) i svaki tjedan generiše jasan izvještaj s preporukama — bez ručnog prebijanja brojeva u Excelu.</p>
+        <ul class="tags"><li>Google Analytics</li><li>Meta Ads</li><li>n8n</li><li>OpenAI</li></ul>
+        <a href="#contact" class="service-link">Pogledaj detalje <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+      </article>
+    </div>
+
+    <div class="services-foot">
+      <span>Trebaš prilagođenu kombinaciju? Skrojimo strategiju za tvoj posao.</span>
+      <a href="#contact" class="link-arrow">Besplatni strateški razgovor <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────── PROCES ───────────── -->
+<section class="process" id="process">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow"><i class="dot"></i> Kako radimo</span>
+      <h2>Od prvog poziva do <em>isporučenog rezultata</em> — u tjednima, ne kvartalima.</h2>
+    </header>
+
+    <ol class="steps">
+      <li>
+        <span class="step-num">01</span>
+        <h4>Otkriće</h4>
+        <p>Besplatan razgovor od 30 minuta. Mapiramo ciljeve, promet, lijevak i operativna uska grla — i šaljemo pisanu procjenu.</p>
+      </li>
+      <li>
+        <span class="step-num">02</span>
+        <h4>Strategija</h4>
+        <p>Jedan dokument s planom: opseg, rokovi, tim, mjerila uspjeha. Bez ponuda, bez prezentacija, bez iznenađenja.</p>
+      </li>
+      <li>
+        <span class="step-num">03</span>
+        <h4>Izrada</h4>
+        <p>Tjedni sprintovi u dijeljenom Linear workspaceu. Demoi svakog petka, dnevni async updateovi, bez agencijskog teatra.</p>
+      </li>
+      <li>
+        <span class="step-num">04</span>
+        <h4>Skaliranje</h4>
+        <p>Lansiranje, mjerenje, iteracija. Ostajemo kao retainer ili predajemo sve — tvoj tim, tvoj kod, tvoji računi.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ───────────── STUDIJE SLUČAJA ───────────── -->
+<section class="cases" id="work">
+  <div class="container">
+    <header class="section-head with-link">
+      <div>
+        <span class="eyebrow"><i class="dot"></i> Studije slučaja</span>
+        <h2>Pogledaj kako smo pomogli <em>poslovima napredovati</em></h2>
+      </div>
+      <a href="#contact" class="link-arrow">Više studija slučaja <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+    </header>
+
+    <div class="case-grid">
+      <article class="case case-lg">
+        <div class="case-media" data-bg="1">
+          <ul class="chips"><li>Webflow</li><li>SEO</li><li>Brend</li></ul>
+        </div>
+        <div class="case-body">
+          <h3>Lokalni brend usluga postaje nacionalan</h3>
+          <p>Replatformirali smo stranicu, izgradili lijevak i pokrenuli 90-dnevni SEO sprint — <strong>5× organski promet</strong> i <strong>+80% upita</strong> u šest mjeseci.</p>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="case-media" data-bg="2">
+          <ul class="chips"><li>SaaS</li><li>Next.js</li></ul>
+        </div>
+        <div class="case-body">
+          <h3>Stroj za generiranje SaaS leadova</h3>
+          <p>Marketing stranica, programatski SEO i outbound infrastruktura. <strong>+150% MQL-ova</strong> uz <strong>−40% CAC</strong>.</p>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="case-media" data-bg="3">
+          <ul class="chips"><li>Shopify</li><li>Email</li></ul>
+        </div>
+        <div class="case-body">
+          <h3>Rast e-commerce trgovine</h3>
+          <p>Nova tema, lifecycle email tokovi i tjedno štelovani oglasi — <strong>3× prihod</strong> u 6 mjeseci na istom budgetu za oglase.</p>
+        </div>
+      </article>
+
+      <article class="case case-lg">
+        <div class="case-media" data-bg="4">
+          <ul class="chips"><li>Claude</li><li>n8n</li><li>Sheets</li></ul>
+        </div>
+        <div class="case-body">
+          <h3>AI prodajni agent za B2B tim</h3>
+          <p>Zamijenili smo trio od 3 SDR-a Claudeovim agentom za istraživanje i outreach. <strong>20 h/tjedan ušteđeno</strong>, <strong>+38% stopa odgovora</strong>.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────── RECENZIJE ───────────── -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="testimonial-head">
+      <article class="kpi-card">
+        <div class="kpi-row">
+          <div class="avatars">
+            <span style="background:linear-gradient(135deg,#38BDF8,#a855f7)">L</span>
+            <span style="background:linear-gradient(135deg,#60a5fa,#a855f7)">M</span>
+            <span style="background:linear-gradient(135deg,#34d399,#06b6d4)">D</span>
+          </div>
+          <div>
+            <strong>4,9 / 5</strong>
+            <em>Od preko 80 osnivača</em>
+          </div>
+        </div>
+        <hr/>
+        <div class="kpi-grid">
+          <div><strong>+126%</strong><em>Prosj. organski promet</em></div>
+          <div><strong>+38%</strong><em>Prosj. rast konverzije</em></div>
+        </div>
+        <ul class="kpi-tags">
+          <li><i class="dot"></i> Web razvoj</li>
+          <li><i class="dot"></i> SEO i plaćeno</li>
+          <li><i class="dot"></i> AI workflowi</li>
+        </ul>
+      </article>
+
+      <div class="testimonial-intro">
+        <span class="eyebrow"><i class="dot"></i> Što kažu naši klijenti</span>
+        <h2>Čuj naše zadovoljne klijente — <em>prave priče o uspjehu.</em></h2>
+        <p>Otkrij kako su poslovi poput tvog ostvarili izuzetan rast uz stručan tim Code Studia.</p>
+      </div>
+    </div>
+
+    <div class="quote-grid">
+      <figure class="quote">
+        <div class="stars" aria-label="5 zvjezdica">★★★★★</div>
+        <blockquote>"Vrlo profesionalni i orijentirani na rezultat. Stručnost Code Studia u brendiranju i sadržaju pomogla nam je izgraditi snažan online identitet — i pipeline koji se sam hrani."</blockquote>
+        <figcaption>
+          <span class="avatar" style="background:linear-gradient(135deg,#fb7185,#a855f7)">J</span>
+          <div><strong>James Peterson</strong><em>COO · Brightline</em></div>
+        </figcaption>
+      </figure>
+
+      <figure class="quote">
+        <div class="stars" aria-label="5 zvjezdica">★★★★★</div>
+        <blockquote>"Potpuno su transformirali našu online prisutnost. Strategije digitalnog marketinga pomogle su nam udvostručiti prihod u šest mjeseci — a AI workflow koji su isporučili uštedio nam je zapošljavanje."</blockquote>
+        <figcaption>
+          <span class="avatar" style="background:linear-gradient(135deg,#60a5fa,#22d3ee)">E</span>
+          <div><strong>Emma Richard</strong><em>CEO · Nexatech</em></div>
+        </figcaption>
+      </figure>
+
+      <figure class="quote">
+        <div class="stars" aria-label="5 zvjezdica">★★★★★</div>
+        <blockquote>"Surađivali smo s mnogim agencijama prije — Code Studio se izdvaja. Njihov pristup temeljen na podacima i kreativna rješenja dali su nam prednost pred konkurentima koje godinama jurimo."</blockquote>
+        <figcaption>
+          <span class="avatar" style="background:linear-gradient(135deg,#34d399,#06b6d4)">D</span>
+          <div><strong>David Mont</strong><em>Direktor marketinga · Mercura</em></div>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────── FAQ ───────────── -->
+<section class="faq">
+  <div class="container two-col faq-cols">
+    <div>
+      <span class="eyebrow"><i class="dot"></i> ČPP</span>
+      <h2>Sve što si htio pitati <em>prije rezervacije razgovora.</em></h2>
+      <p>Ne vidiš svoje pitanje? Piši nam — obično odgovaramo unutar jednog radnog dana.</p>
+    </div>
+    <div class="faq-list">
+      <details open>
+        <summary>Koliko traje tipičan projekt?</summary>
+        <p>Marketing stranice: 3–5 tjedana. Custom builds i SaaS MVP: 6–10 tjedana. AI automatizacije: 1–3 tjedna po workflowu. Tvrdi rok dajemo na koraku strategije — i držimo ga.</p>
+      </details>
+      <details>
+        <summary>Radite li sa startupima ili samo s etabliranim brendovima?</summary>
+        <p>S oboje. Lansirali smo proizvode od nule i vodimo retainere za poslove od 10M$+. Zajednička nit su timovi koji se brzo kreću i mare za kvalitetu.</p>
+      </details>
+      <details>
+        <summary>Možete li preuzeti postojeći projekt?</summary>
+        <p>Da. Redovito naslijedimo polovične stranice, ad accounte i AI prototipove. Napravit ćemo audit, iskreno reći što vrijedi zadržati i vratit ćemo te na pravi put.</p>
+      </details>
+      <details>
+        <summary>Gdje ste smješteni?</summary>
+        <p>Remote-first smo tim diljem Europe s klijentima u EU, UK i SAD-u. Većina komunikacije ide kroz Slack i Linear, uz tjedne video sastanke.</p>
+      </details>
+      <details>
+        <summary>Kako funkcionira cijena i suradnja?</summary>
+        <p>Projekti s fiksnim opsegom kotiraju se unaprijed. Retaineri idu mjesec za mjesec iz dijeljenog backloga. Bez dugih ugovora i bez iznenađujućih računa — otkaži kad god nakon prvog mjeseca.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────── CTA ───────────── -->
+<section class="cta" id="contact">
+  <div class="container cta-card">
+    <div class="cta-bg" aria-hidden="true"></div>
+    <div class="cta-inner">
+      <span class="eyebrow"><i class="dot"></i> Hajdemo nešto izgraditi</span>
+      <h2>Spreman isporučiti nešto <em>stvarno dobro?</em></h2>
+      <p>Ispričaj nam o svom poslu u 30 minuta. Pisani plan šaljemo unutar 48 sati — i ako nećemo na kraju surađivati.</p>
+
+      <form class="cta-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Poslano ✓'; this.reset();">
+        <label class="field">
+          <span>Tvoje ime</span>
+          <input type="text" placeholder="Ana Anić" required />
+        </label>
+        <label class="field">
+          <span>Poslovni email</span>
+          <input type="email" placeholder="ana@tvrtka.hr" required />
+        </label>
+        <label class="field full">
+          <span>Što ti treba?</span>
+          <select>
+            <option>Web stranica / web aplikacija</option>
+            <option>Digitalni marketing</option>
+            <option>AI automatizacije</option>
+            <option>Brend i dizajn</option>
+            <option>Cijeli retainer za rast</option>
+            <option>Još ne znam — porazgovarajmo</option>
+          </select>
+        </label>
+        <label class="field full">
+          <span>Kratki brief (opcionalno)</span>
+          <textarea rows="3" placeholder="Što pokušavaš isporučiti, prodati ili skalirati?"></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">
+          <span>Rezerviraj razgovor</span>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </button>
+        <em class="cta-fine">Bez newslettera. Bez prodaje. Pravi odgovor unutar jednog radnog dana.</em>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────── FOOTER ───────────── -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#" class="brand">
+        <span class="brand-mark">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 12 L18 6 L30 12 L30 24 L18 30 L6 24 Z" stroke="url(#g2)" stroke-width="1.6"/>
+            <path d="M14 16 L11 18 L14 20 M22 16 L25 18 L22 20" stroke="url(#g2)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+              <linearGradient id="g2" x1="0" y1="0" x2="36" y2="36">
+                <stop stop-color="#38BDF8"/><stop offset="1" stop-color="#8B5CF6"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="brand-text"><strong>Code Studio</strong><em>Web · Marketing · AI</em></span>
+      </a>
+      <p>Mali iskusan tim koji gradi web stranice, sustave rasta i AI automatizacije za ambiciozne brendove.</p>
+    </div>
+
+    <div>
+      <h5>Studio</h5>
+      <ul><li><a href="#about">O nama</a></li><li><a href="#work">Studije slučaja</a></li><li><a href="#process">Proces</a></li><li><a href="#contact">Kontakt</a></li></ul>
+    </div>
+    <div>
+      <h5>Usluge</h5>
+      <ul><li><a href="#services">Web razvoj</a></li><li><a href="#services">Digitalni marketing</a></li><li><a href="#services">AI automatizacija</a></li><li><a href="#services">Brend i dizajn</a></li></ul>
+    </div>
+    <div>
+      <h5>Kontakt</h5>
+      <ul>
+        <li><a href="mailto:hello@codestudio.agency">hello@codestudio.agency</a></li>
+        <li><a href="tel:+38765000000">+387 65 000 000</a></li>
+        <li>Banja Luka · Remote-first</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <small>© <span id="year">2026</span> Code Studio. Sva prava pridržana.</small>
+    <small>Izrađeno s pažnjom · <a href="#">Privatnost</a> · <a href="#">Uvjeti</a></small>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
