@@ -29,6 +29,28 @@
     localStorage.setItem('cs-theme', next);
   });
 
+  /* ── 3b. Mobile menu toggle ─────────────────────── */
+  const menuBtn = $('.menu-btn');
+  const mobileMenu = $('#mobile-menu');
+  if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('open');
+      menuBtn.classList.toggle('open', isOpen);
+      menuBtn.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+    const closeMenu = () => {
+      mobileMenu.classList.remove('open');
+      menuBtn.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    };
+    $$('a', mobileMenu).forEach(link => link.addEventListener('click', closeMenu));
+    mobileMenu.addEventListener('click', e => {
+      if (e.target === mobileMenu) closeMenu();
+    });
+  }
+
   /* ── 4. Smooth-scroll offset ────────────────────── */
   $$('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {

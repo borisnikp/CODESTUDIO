@@ -18,44 +18,40 @@
 <!-- ───────────── NAVIGACIJA ───────────── -->
 <header class="nav" id="nav">
   <a href="#" class="brand" aria-label="Code Studio početna">
-    <span class="brand-mark" aria-hidden="true">
-      <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M6 12 L18 6 L30 12 L30 24 L18 30 L6 24 Z" stroke="url(#g1)" stroke-width="1.6"/>
-        <path d="M14 16 L11 18 L14 20 M22 16 L25 18 L22 20" stroke="url(#g1)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-        <defs>
-          <linearGradient id="g1" x1="0" y1="0" x2="36" y2="36">
-            <stop stop-color="#38BDF8"/><stop offset="1" stop-color="#8B5CF6"/>
-          </linearGradient>
-        </defs>
-      </svg>
-    </span>
-    <span class="brand-text">
-      <strong>Code Studio</strong>
-      <em>Digital · Web · AI</em>
-    </span>
+    <svg class="brand-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 140" font-family="Inter, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+      <text x="360" y="104" text-anchor="middle" font-size="120" font-weight="800" letter-spacing="-5.4" fill="currentColor">Code<tspan fill="#3FB6FF">/</tspan>Studio</text>
+    </svg>
   </a>
 
   <nav class="nav-links" aria-label="Primarno">
     <a href="#services">Usluge</a>
-    <a href="#work">Radovi</a>
     <a href="#process">Proces</a>
     <a href="#testimonials">Recenzije</a>
     <a href="#contact">Kontakt</a>
   </nav>
 
   <div class="nav-cta">
-    <button class="theme-toggle" aria-label="Promijeni temu" type="button">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5"/></svg>
-    </button>
     <a href="#contact" class="btn btn-primary btn-sm">
       <span>Pokreni projekt</span>
       <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
     </a>
-    <button class="menu-btn" aria-label="Otvori izbornik" aria-expanded="false">
-      <span></span><span></span>
-    </button>
   </div>
+  <button class="menu-btn" aria-label="Otvori izbornik" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </header>
+
+<!-- ───────────── MOBILE MENU ───────────── -->
+<nav class="mobile-menu" id="mobile-menu" aria-label="Mobilna navigacija">
+  <a href="#services">Usluge</a>
+  <a href="#process">Proces</a>
+  <a href="#testimonials">Recenzije</a>
+  <a href="#contact">Kontakt</a>
+  <a href="#contact" class="btn btn-primary btn-sm">
+    <span>Pokreni projekt</span>
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+  </a>
+</nav>
 
 <!-- ───────────── HERO ───────────── -->
 <section class="hero">
@@ -68,43 +64,17 @@
   <div class="hero-inner">
 
     <h1 class="hero-title">
-      <em class="em-white">Web</em> koji ulijeva povjerenje.<br/>
+      <em class="em-white">Web stranica</em> koja ulijeva povjerenje.<br/>
       <em>Marketing</em> koji dovodi kupce.<br/>
-      <em>AI</em> koji štedi sate.
+      <em>AI</em> koji štedi vrijeme.
     </h1>
 
-    <p class="hero-sub">
-      Trebaš više klijenata, manje gubljenja vremena i web stranicu koja radi dok spavaš. Gradimo ti sve što treba — stranicu koja prodaje, marketing koji donosi kupce i automatizacije koje zamjenjuju 20 sati ručnog rada tjedno.
-    </p>
 
-    <div class="hero-cta">
+    <div class="hero-cta hero-cta-center">
       <a href="#contact" class="btn btn-primary">
         <span>Rezerviraj besplatni razgovor</span>
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
       </a>
-
-      <a href="#work" class="btn btn-ghost">
-        <span class="play-circle" aria-hidden="true">
-          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M5 3.5v9l8-4.5z"/></svg>
-        </span>
-        <span class="btn-stack">
-          <strong>Pogledaj reel</strong>
-          <em>Odabrani radovi · 90s</em>
-        </span>
-      </a>
-
-      <div class="hero-proof">
-        <div class="avatars">
-          <span style="background:linear-gradient(135deg,#38BDF8,#a855f7)">L</span>
-          <span style="background:linear-gradient(135deg,#60a5fa,#a855f7)">M</span>
-          <span style="background:linear-gradient(135deg,#34d399,#06b6d4)">D</span>
-          <span style="background:linear-gradient(135deg,#fb923c,#38BDF8)">K</span>
-        </div>
-        <div class="proof-text">
-          <strong>4,9 / 5</strong>
-          <em>Od preko 80 osnivača</em>
-        </div>
-      </div>
     </div>
 
     <div class="hero-meta">
@@ -117,21 +87,43 @@
 </section>
 
 <!-- ───────────── MARQUEE ───────────── -->
-<section class="marquee" aria-label="Surađujemo s">
+<section class="marquee" aria-label="Zadovoljni klijenti">
   <div class="marquee-head">
-    <span>Povjerenje brzih timova i ambicioznih osnivača</span>
+    <span>Zadovoljni klijenti</span>
     <i></i>
   </div>
   <div class="marquee-track">
     <div class="marquee-row">
-      <span>◇ Linear Labs</span><span>✶ Northwave</span><span>◆ Brightline</span><span>⬢ Mercura</span>
-      <span>◎ Foundry &amp; Co</span><span>▲ Atlas Outdoor</span><span>✦ Helio Studio</span><span>◇ Vantage AI</span>
-      <span>⬡ Orbit Health</span><span>✶ Northwave</span><span>◆ Brightline</span><span>⬢ Mercura</span>
+      <span><img src="palacinkabarleo.png" alt="Palačinka Bar Leo" class="marquee-logo marquee-logo-lg" /></span>
+      <span><img src="udrugamladiharabanasa.jpg" alt="Udruga Mladih Arbanasa" class="marquee-logo marquee-logo-circle" /></span>
+      <span><img src="Taxi-Pio-Logotip-navigacija.webp" alt="Taxi Pio" class="marquee-logo" /></span>
+      <span><img src="alphaboats logo.webp" alt="Alphaboats" class="marquee-logo" /></span>
+      <span><img src="zadarpass.png" alt="Zadar Pass" class="marquee-logo" /></span>
+      <span><img src="infotelplus.png" alt="Infotel Plus" class="marquee-logo" /></span>
+      <span><img src="smbloom.png" alt="SM Bloom" class="marquee-logo marquee-logo-circle" /></span>
+      <span><img src="referalis.png" alt="Referalis" class="marquee-logo" /></span>
+      <span><img src="nommahome.jpg" alt="Nomma Home" class="marquee-logo marquee-logo-circle" /></span>
+      <span><img src="palacinkabarleo.png" alt="Palačinka Bar Leo" class="marquee-logo marquee-logo-lg" /></span>
+      <span><img src="udrugamladiharabanasa.jpg" alt="Udruga Mladih Arbanasa" class="marquee-logo marquee-logo-circle" /></span>
+      <span><img src="Taxi-Pio-Logotip-navigacija.webp" alt="Taxi Pio" class="marquee-logo" /></span>
+      <span><img src="alphaboats logo.webp" alt="Alphaboats" class="marquee-logo" /></span>
+      <span><img src="zadarpass.png" alt="Zadar Pass" class="marquee-logo" /></span>
     </div>
     <div class="marquee-row" aria-hidden="true">
-      <span>◇ Linear Labs</span><span>✶ Northwave</span><span>◆ Brightline</span><span>⬢ Mercura</span>
-      <span>◎ Foundry &amp; Co</span><span>▲ Atlas Outdoor</span><span>✦ Helio Studio</span><span>◇ Vantage AI</span>
-      <span>⬡ Orbit Health</span><span>✶ Northwave</span><span>◆ Brightline</span><span>⬢ Mercura</span>
+      <span><img src="palacinkabarleo.png" alt="Palačinka Bar Leo" class="marquee-logo marquee-logo-lg" /></span>
+      <span><img src="udrugamladiharabanasa.jpg" alt="Udruga Mladih Arbanasa" class="marquee-logo marquee-logo-circle" /></span>
+      <span><img src="Taxi-Pio-Logotip-navigacija.webp" alt="Taxi Pio" class="marquee-logo" /></span>
+      <span><img src="alphaboats logo.webp" alt="Alphaboats" class="marquee-logo" /></span>
+      <span><img src="zadarpass.png" alt="Zadar Pass" class="marquee-logo" /></span>
+      <span><img src="infotelplus.png" alt="Infotel Plus" class="marquee-logo" /></span>
+      <span><img src="smbloom.png" alt="SM Bloom" class="marquee-logo marquee-logo-circle" /></span>
+      <span><img src="referalis.png" alt="Referalis" class="marquee-logo" /></span>
+      <span><img src="nommahome.jpg" alt="Nomma Home" class="marquee-logo marquee-logo-circle" /></span>
+      <span><img src="palacinkabarleo.png" alt="Palačinka Bar Leo" class="marquee-logo marquee-logo-lg" /></span>
+      <span><img src="udrugamladiharabanasa.jpg" alt="Udruga Mladih Arbanasa" class="marquee-logo marquee-logo-circle" /></span>
+      <span><img src="Taxi-Pio-Logotip-navigacija.webp" alt="Taxi Pio" class="marquee-logo" /></span>
+      <span><img src="alphaboats logo.webp" alt="Alphaboats" class="marquee-logo" /></span>
+      <span><img src="zadarpass.png" alt="Zadar Pass" class="marquee-logo" /></span>
     </div>
   </div>
 </section>
@@ -303,61 +295,6 @@
   </div>
 </section>
 
-<!-- ───────────── STUDIJE SLUČAJA ───────────── -->
-<section class="cases" id="work">
-  <div class="container">
-    <header class="section-head with-link">
-      <div>
-        <span class="eyebrow"><i class="dot"></i> Studije slučaja</span>
-        <h2>Pogledaj kako smo pomogli <em>poslovima napredovati</em></h2>
-      </div>
-      <a href="#contact" class="link-arrow">Više studija slučaja <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
-    </header>
-
-    <div class="case-grid">
-      <article class="case case-lg">
-        <div class="case-media" data-bg="1">
-          <ul class="chips"><li>Webflow</li><li>SEO</li><li>Brend</li></ul>
-        </div>
-        <div class="case-body">
-          <h3>Lokalni brend usluga postaje nacionalan</h3>
-          <p>Replatformirali smo stranicu, izgradili lijevak i pokrenuli 90-dnevni SEO sprint — <strong>5× organski promet</strong> i <strong>+80% upita</strong> u šest mjeseci.</p>
-        </div>
-      </article>
-
-      <article class="case">
-        <div class="case-media" data-bg="2">
-          <ul class="chips"><li>SaaS</li><li>Next.js</li></ul>
-        </div>
-        <div class="case-body">
-          <h3>Stroj za generiranje SaaS leadova</h3>
-          <p>Marketing stranica, programatski SEO i outbound infrastruktura. <strong>+150% MQL-ova</strong> uz <strong>−40% CAC</strong>.</p>
-        </div>
-      </article>
-
-      <article class="case">
-        <div class="case-media" data-bg="3">
-          <ul class="chips"><li>Shopify</li><li>Email</li></ul>
-        </div>
-        <div class="case-body">
-          <h3>Rast e-commerce trgovine</h3>
-          <p>Nova tema, lifecycle email tokovi i tjedno štelovani oglasi — <strong>3× prihod</strong> u 6 mjeseci na istom budgetu za oglase.</p>
-        </div>
-      </article>
-
-      <article class="case case-lg">
-        <div class="case-media" data-bg="4">
-          <ul class="chips"><li>Claude</li><li>n8n</li><li>Sheets</li></ul>
-        </div>
-        <div class="case-body">
-          <h3>AI prodajni agent za B2B tim</h3>
-          <p>Zamijenili smo trio od 3 SDR-a Claudeovim agentom za istraživanje i outreach. <strong>20 h/tjedan ušteđeno</strong>, <strong>+38% stopa odgovora</strong>.</p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
 <!-- ───────────── RECENZIJE ───────────── -->
 <section class="testimonials" id="testimonials">
   <div class="container">
@@ -505,18 +442,9 @@
   <div class="container footer-grid">
     <div class="footer-brand">
       <a href="#" class="brand">
-        <span class="brand-mark">
-          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M6 12 L18 6 L30 12 L30 24 L18 30 L6 24 Z" stroke="url(#g2)" stroke-width="1.6"/>
-            <path d="M14 16 L11 18 L14 20 M22 16 L25 18 L22 20" stroke="url(#g2)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-            <defs>
-              <linearGradient id="g2" x1="0" y1="0" x2="36" y2="36">
-                <stop stop-color="#38BDF8"/><stop offset="1" stop-color="#8B5CF6"/>
-              </linearGradient>
-            </defs>
-          </svg>
-        </span>
-        <span class="brand-text"><strong>Code Studio</strong><em>Web · Marketing · AI</em></span>
+        <svg class="brand-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 140" font-family="Inter, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+          <text x="360" y="104" text-anchor="middle" font-size="120" font-weight="800" letter-spacing="-5.4" fill="currentColor">Code<tspan fill="#3FB6FF">/</tspan>Studio</text>
+        </svg>
       </a>
       <p>Mali iskusan tim koji gradi web stranice, sustave rasta i AI automatizacije za ambiciozne brendove.</p>
     </div>
@@ -532,9 +460,9 @@
     <div>
       <h5>Kontakt</h5>
       <ul>
-        <li><a href="mailto:hello@codestudio.agency">hello@codestudio.agency</a></li>
-        <li><a href="tel:+38765000000">+387 65 000 000</a></li>
-        <li>Banja Luka · Remote-first</li>
+        <li><a href="mailto:codestudiozadar@gmail.com">codestudiozadar@gmail.com</a></li>
+        <li><a href="tel:+385958158446">+385 95 815 8446</a></li>
+        <li>23000 Zadar</li>
       </ul>
     </div>
   </div>
