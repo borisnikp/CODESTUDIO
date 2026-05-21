@@ -254,6 +254,7 @@ em.serif, h1 em, h2 em, h3 em {
   .nav { grid-template-columns: auto 1fr auto auto; }
   .nav-links { display: none; }
   .nav-cta { justify-self: center; }
+  .brand-logo { height: 36px; }
   .menu-btn {
     display: grid; place-items: center; gap: 4px;
     width: 38px; height: 38px;
