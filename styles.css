@@ -1139,20 +1139,16 @@ em.serif, h1 em, h2 em, h3 em {
 }
 .hero-title em.hero-keyword {
   display: inline-block !important;
-  opacity: 0;
-  transform: translateY(80%) rotateX(-40deg) scale(0.9);
-  transform-origin: 50% 100%;
+  clip-path: inset(100% 0 0 0);
+  transform: translateY(40%);
   transition:
-    opacity .9s var(--ease),
-    transform 1.1s var(--ease),
-    filter 1.2s var(--ease);
+    clip-path .8s var(--ease),
+    transform .8s var(--ease);
   transition-delay: var(--cd, 0ms);
-  filter: blur(8px);
 }
 .hero-title em.hero-keyword.in {
-  opacity: 1;
-  transform: translateY(0) rotateX(0) scale(1);
-  filter: blur(0);
+  clip-path: inset(0 0 0 0);
+  transform: translateY(0);
 }
 .split-line { display: inline-block; perspective: 600px; }
 

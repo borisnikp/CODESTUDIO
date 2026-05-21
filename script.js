@@ -105,7 +105,7 @@
     el.dataset.split = '1';
     const items = [];
     const walk = node => {
-      node.childNodes.forEach(child => {
+      Array.from(node.childNodes).forEach(child => {
         if (child.nodeType === Node.TEXT_NODE) {
           const text = child.textContent;
           const frag = document.createDocumentFragment();
