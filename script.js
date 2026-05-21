@@ -103,8 +103,8 @@
   const splitTitle = el => {
     if (!el || el.dataset.split) return;
     el.dataset.split = '1';
+    const items = [];
     const walk = node => {
-      const out = [];
       node.childNodes.forEach(child => {
         if (child.nodeType === Node.TEXT_NODE) {
           const text = child.textContent;
@@ -116,20 +116,23 @@
               span.className = 'split-char';
               span.textContent = ch;
               frag.appendChild(span);
-              out.push(span);
+              items.push(span);
             }
           });
           child.replaceWith(frag);
         } else if (child.nodeType === Node.ELEMENT_NODE) {
           if (child.tagName === 'BR') return;
-          out.push(...walk(child));
+          if (child.tagName === 'EM') {
+            items.push(child);
+          } else {
+            walk(child);
+          }
         }
       });
-      return out;
     };
-    const chars = walk(el);
-    chars.forEach((c, i) => c.style.setProperty('--cd', (i * 22) + 'ms'));
-    return chars;
+    walk(el);
+    items.forEach((c, i) => c.style.setProperty('--cd', (i * 28) + 'ms'));
+    return items;
   };
   const titleEl = $('.hero-title');
   const titleChars = splitTitle(titleEl) || [];
