@@ -197,23 +197,25 @@
     const target = parseFloat(numStr);
     if (isNaN(target)) return;
     const decimals = (numStr.split('.')[1] || '').length;
-    const duration = 1400;
-    const start = performance.now();
+    const duration = 2500;
     const ease = t => 1 - Math.pow(1 - t, 3);
-    const step = (now) => {
-      const t = Math.min(1, (now - start) / duration);
-      const v = target * ease(t);
-      const fmt = decimals
-        ? v.toFixed(decimals)
-        : Math.round(v).toLocaleString('en-US');
-      el.textContent = prefix + fmt + suffix;
-      if (t < 1) requestAnimationFrame(step);
-      else el.textContent = raw;
-    };
-    el.textContent = prefix + (decimals ? (0).toFixed(decimals) : '0') + suffix;
-    requestAnimationFrame(step);
+    el.textContent = prefix + '0' + suffix;
+    setTimeout(() => {
+      const start = performance.now();
+      const step = (now) => {
+        const t = Math.min(1, (now - start) / duration);
+        const v = target * ease(t);
+        const fmt = decimals
+          ? v.toFixed(decimals)
+          : Math.round(v).toLocaleString('en-US');
+        el.textContent = prefix + fmt + suffix;
+        if (t < 1) requestAnimationFrame(step);
+        else el.textContent = raw;
+      };
+      requestAnimationFrame(step);
+    }, 800);
   };
-  const counterTargets = $$('.hero-meta strong, .kpi-grid strong');
+  const counterTargets = $$('.hero-meta strong[data-count], .kpi-grid strong[data-count]');
   if (!reduceMotion && 'IntersectionObserver' in window) {
     const cio = new IntersectionObserver(entries => {
       entries.forEach(e => {
