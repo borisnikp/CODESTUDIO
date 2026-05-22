@@ -425,6 +425,18 @@ em.serif, h1 em, h2 em, h3 em {
   font-size: clamp(2rem, 4vw, 3.4rem);
   overflow: visible;
 }
+.hero-white {
+  font-weight: 700;
+  font-family: 'Chakra Petch', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.hero-title strong.hero-white .split-char {
+  background: linear-gradient(135deg, #ffffff 0%, #b0b0b0 50%, #ffffff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 .hero-title em {
   padding-left: 0.05em;
   padding-right: 0.05em;
@@ -506,7 +518,7 @@ em.serif, h1 em, h2 em, h3 em {
   font-size: clamp(1.6rem, 3vw, 2.4rem);
   font-weight: 700;
   letter-spacing: -0.01em;
-  background: var(--grad);
+  background: linear-gradient(135deg, #ffffff 0%, #b0b0b0 50%, #ffffff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1138,18 +1150,20 @@ em.serif, h1 em, h2 em, h3 em {
   opacity: 1;
   transform: translateY(0) rotateX(0);
 }
-.hero-title em.hero-keyword {
+.hero-title .hero-keyword {
   display: inline-block !important;
-  clip-path: inset(100% 0 0 0);
-  transform: translateY(40%);
-  transition:
-    clip-path .8s var(--ease),
-    transform .8s var(--ease);
-  transition-delay: var(--cd, 0ms);
 }
-.hero-title em.hero-keyword.in {
-  clip-path: inset(0 0 0 0);
-  transform: translateY(0);
+.hero-title em.hero-keyword {
+  font-family: 'Chakra Petch', sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.hero-title em.hero-keyword .split-char {
+  background: var(--grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 .split-line { display: inline-block; perspective: 600px; }
 

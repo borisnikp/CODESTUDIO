@@ -122,16 +122,12 @@
           child.replaceWith(frag);
         } else if (child.nodeType === Node.ELEMENT_NODE) {
           if (child.tagName === 'BR') return;
-          if (child.tagName === 'EM') {
-            items.push(child);
-          } else {
-            walk(child);
-          }
+          walk(child);
         }
       });
     };
     walk(el);
-    items.forEach((c, i) => c.style.setProperty('--cd', (i * 28) + 'ms'));
+    items.forEach((c, i) => c.style.setProperty('--cd', (i * 22) + 'ms'));
     return items;
   };
   const titleEl = $('.hero-title');
