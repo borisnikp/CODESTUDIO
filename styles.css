@@ -422,7 +422,7 @@ em.serif, h1 em, h2 em, h3 em {
 .hero-title {
   max-width: 32ch;
   margin: 0 0 24px;
-  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-size: clamp(1.5rem, 4vw, 3.4rem);
   overflow: visible;
 }
 .hero-white {
