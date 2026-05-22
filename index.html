@@ -145,7 +145,6 @@
     </aside>
 
     <div class="exp-content">
-      <span class="eyebrow"><i class="dot"></i> Naša ekspertiza</span>
       <h2>Inženjerski izrađene stranice.<br/>Mjerljivi marketing.<br/><em>Pametne AI automatizacije.</em></h2>
       <p class="lead">
         Code Studio je mali iskusan tim — inženjeri, marketingaši i AI graditelji — koji isporučuje radove kakve agencije dvostruko veće ne mogu.
@@ -177,9 +176,8 @@
 <section class="services" id="services">
   <div class="container">
     <header class="section-head">
-      <span class="eyebrow"><i class="dot"></i> Naše ključne usluge</span>
       <h2>Digitalna rješenja koja <em>donose stvarne rezultate</em></h2>
-      <p>Tri discipline, jedan studio. Odaberi što ti treba — ili pokreni cijeli sustav od početka do kraja.</p>
+      <p>Mnogo mogućnosti, jedan Code Studio. Odaberi što ti treba — ili pokreni cijeli sustav od početka do kraja.</p>
     </header>
 
     <div class="service-grid">
@@ -267,7 +265,6 @@
 <section class="process" id="process">
   <div class="container">
     <header class="section-head">
-      <span class="eyebrow"><i class="dot"></i> Kako radimo</span>
       <h2>Od prvog poziva do <em>isporučenog rezultata</em> — u tjednima, ne mjesecima.</h2>
     </header>
 
@@ -300,7 +297,6 @@
 <section class="projects" id="work">
   <div class="container">
     <header class="section-head">
-      <span class="eyebrow"><i class="dot"></i> Istaknuti projekti</span>
       <h2>Pogledaj neke od naših <em>nedavnih radova</em></h2>
     </header>
 
@@ -332,6 +328,16 @@
         <div class="project-info">
           <h3>Referalis</h3>
           <p>referalis.com</p>
+        </div>
+      </a>
+
+      <a href="https://zadarpass.com" target="_blank" rel="noopener" class="project-card">
+        <div class="project-img">
+          <img src="screenshot-zadarpass.png" alt="Zadar City Pass" loading="lazy" />
+        </div>
+        <div class="project-info">
+          <h3>Zadar City Pass</h3>
+          <p>zadarpass.com</p>
         </div>
       </a>
     </div>
@@ -367,7 +373,6 @@
       </article>
 
       <div class="testimonial-intro">
-        <span class="eyebrow"><i class="dot"></i> Što kažu naši klijenti</span>
         <h2>Čuj naše zadovoljne klijente — <em>prave priče o uspjehu.</em></h2>
         <p>Otkrij kako su poslovi poput tvog ostvarili izuzetan rast uz stručan tim Code Studia.</p>
       </div>
@@ -408,7 +413,6 @@
 <section class="faq">
   <div class="container two-col faq-cols">
     <div>
-      <span class="eyebrow"><i class="dot"></i> ČPP</span>
       <h2>Sve što si htio pitati <em>prije rezervacije razgovora.</em></h2>
       <p>Ne vidiš svoje pitanje? Piši nam — obično odgovaramo unutar jednog radnog dana.</p>
     </div>
@@ -442,22 +446,25 @@
   <div class="container cta-card">
     <div class="cta-bg" aria-hidden="true"></div>
     <div class="cta-inner">
-      <span class="eyebrow"><i class="dot"></i> Hajdemo nešto izgraditi</span>
       <h2>Spreman isporučiti nešto <em>stvarno dobro?</em></h2>
       <p>Ispričaj nam o svom poslu u 30 minuta. Pisani plan šaljemo unutar 48 sati — i ako nećemo na kraju surađivati.</p>
 
-      <form class="cta-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Poslano ✓'; this.reset();">
+      <form class="cta-form" action="https://formsubmit.co/codestudiozadar@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Nova poruka sa codestudio.hr" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://codestudio.hr" />
+        <input type="text" name="_honey" style="display:none" />
         <label class="field">
           <span>Tvoje ime</span>
-          <input type="text" placeholder="Ana Anić" required />
+          <input type="text" name="name" placeholder="Ana Anić" required />
         </label>
         <label class="field">
           <span>Poslovni email</span>
-          <input type="email" placeholder="ana@tvrtka.hr" required />
+          <input type="email" name="email" placeholder="ana@tvrtka.hr" required />
         </label>
         <label class="field full">
           <span>Što ti treba?</span>
-          <select>
+          <select name="service">
             <option>Web stranica / web aplikacija</option>
             <option>Digitalni marketing</option>
             <option>AI automatizacije</option>
@@ -468,7 +475,7 @@
         </label>
         <label class="field full">
           <span>Kratki brief (opcionalno)</span>
-          <textarea rows="3" placeholder="Što pokušavaš isporučiti, prodati ili skalirati?"></textarea>
+          <textarea name="message" rows="3" placeholder="Što pokušavaš isporučiti, prodati ili skalirati?"></textarea>
         </label>
         <button class="btn btn-primary" type="submit">
           <span>Rezerviraj razgovor</span>
