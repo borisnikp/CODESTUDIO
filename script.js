@@ -228,6 +228,20 @@
     counterTargets.forEach(el => cio.observe(el));
   }
 
+  /* ── 9b. Marquee — start only when visible ───────── */
+  const marquee = $('.marquee');
+  if (marquee && 'IntersectionObserver' in window) {
+    const mio = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          marquee.classList.add('in-view');
+          mio.disconnect();
+        }
+      });
+    }, { threshold: 0.2 });
+    mio.observe(marquee);
+  }
+
   /* ── 10. Magnetic primary buttons ───────────────── */
   if (!isTouch && !reduceMotion) {
     $$('.btn-primary').forEach(btn => {

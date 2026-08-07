@@ -1404,7 +1404,8 @@ em.serif, h1 em, h2 em, h3 em {
 .hero-meta:hover strong { background-position: 100% 0; }
 
 /* ── Marquee speed-up controls ── */
-.marquee-track { animation: scroll 35s linear infinite; will-change: transform; }
+.marquee-track { animation: scroll 35s linear infinite; will-change: transform; animation-play-state: paused; }
+.marquee.in-view .marquee-track { animation-play-state: running; }
 .marquee:hover .marquee-track { animation-duration: 18s; }
 
 /* ── FAQ smooth ── */
