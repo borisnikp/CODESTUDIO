@@ -497,8 +497,9 @@ em.serif, h1 em, h2 em, h3 em {
 .hero-meta strong { display: block; font-size: clamp(1.4rem, 2.2vw, 1.9rem); font-weight: 600; letter-spacing: -0.02em; }
 .hero-meta em { font-style: normal; font-size: 0.78rem; color: var(--text-mute); }
 @media (max-width: 720px) {
-  .hero-meta { grid-template-columns: repeat(2, 1fr); }
-  .hero-meta > div:nth-child(2) { border-right: 0; }
+  .hero-meta { grid-template-columns: 1fr; max-width: 320px; margin: 0 auto; }
+  .hero-meta > div { border-right: 0; border-bottom: 1px solid var(--line); padding: 12px 8px; }
+  .hero-meta > div:last-child { border-bottom: 0; }
 }
 
 /* ───────── MARQUEE ───────── */
