@@ -154,7 +154,7 @@
     { sel: '.section-head',                stagger: 0   },
     { sel: '.exp-card, .exp-content',      stagger: 120 },
     { sel: '.service-grid > .service',     stagger: 90  },
-    { sel: '.steps li',                    stagger: 110 },
+    { sel: '.step-item',                    stagger: 110 },
     { sel: '.case-grid > .case',           stagger: 130 },
     { sel: '.quote-grid > .quote',         stagger: 120 },
     { sel: '.kpi-card, .testimonial-intro',stagger: 140 },
@@ -259,7 +259,7 @@
   });
 
   /* ── 12. 3D tilt on cards ───────────────────────── */
-  const tiltSelectors = ['.service', '.case', '.quote', '.steps li', '.exp-stat'];
+  const tiltSelectors = ['.service', '.case', '.quote', '.step-item', '.exp-stat'];
   if (!isTouch && !reduceMotion) {
     tiltSelectors.forEach(sel => {
       $$(sel).forEach(el => {
