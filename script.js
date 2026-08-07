@@ -228,17 +228,17 @@
     counterTargets.forEach(el => cio.observe(el));
   }
 
-  /* ── 9b. Marquee — start only when visible ───────── */
+  /* ── 9b. Marquee — start only when fully visible + delay ── */
   const marquee = $('.marquee');
   if (marquee && 'IntersectionObserver' in window) {
     const mio = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) {
-          marquee.classList.add('in-view');
+          setTimeout(() => marquee.classList.add('in-view'), 800);
           mio.disconnect();
         }
       });
-    }, { threshold: 0.2 });
+    }, { threshold: 0.6 });
     mio.observe(marquee);
   }
 
