@@ -110,6 +110,8 @@ em.serif, h1 em, h2 em, h3 em {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  display: inline-block;
+  padding-right: 0.15em;
 }
 
 .eyebrow {
