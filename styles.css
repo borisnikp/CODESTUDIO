@@ -587,6 +587,18 @@ em.serif, h1 em, h2 em, h3 em {
 .exp-card-inner { position: relative; z-index: 2; max-width: 90%; }
 .exp-card h3 { margin-bottom: 16px; }
 .exp-card p { color: var(--text-soft); margin-bottom: 20px; }
+.exp-contact {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.82rem;
+}
+.exp-contact a {
+  color: var(--text-mute);
+  transition: color .2s;
+}
+.exp-contact a:hover { color: var(--text); }
 .exp-card-grid {
   position: absolute; inset: 0;
   background:
@@ -1080,6 +1092,36 @@ em.serif, h1 em, h2 em, h3 em {
 .cta-inner .eyebrow { margin-bottom: 20px; }
 .cta-inner h2 { margin-bottom: 12px; }
 .cta-inner > p { font-size: 1.05rem; margin-bottom: 36px; color: var(--text-soft); }
+
+.cta-phone {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.phone-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 32px;
+  border-radius: 999px;
+  border: 2px solid rgba(63,182,255,0.4);
+  background: rgba(63,182,255,0.08);
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition: background .3s, border-color .3s, transform .3s;
+}
+.phone-btn svg { width: 22px; height: 22px; min-width: 22px; flex-shrink: 0; color: var(--blue); }
+.phone-btn:hover {
+  background: rgba(63,182,255,0.18);
+  border-color: var(--blue);
+  transform: translateY(-2px);
+}
+.cta-phone p {
+  margin-top: 16px;
+  font-size: 0.9rem;
+  color: var(--text-mute);
+}
 
 .cta-form {
   display: grid;
