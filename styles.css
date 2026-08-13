@@ -972,46 +972,14 @@ em.serif, h1 em, h2 em, h3 em {
 .testimonial-intro p { font-size: 1.02rem; color: var(--text-soft); }
 
 .testimonials {
-  position: relative;
-}
-.testimonials .container {
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  overflow: hidden;
-  box-sizing: border-box;
+  padding: clamp(80px, 10vw, 140px) 0;
 }
 .quote-grid {
   display: flex;
+  flex-direction: column;
   gap: 24px;
-  will-change: transform;
-}
-.quote-grid .review-card {
-  min-width: 380px;
-  max-width: 380px;
-  flex-shrink: 0;
-}
-@media (max-width: 720px) {
-  .testimonials {
-    height: auto !important;
-  }
-  .testimonials .container {
-    position: relative;
-    height: auto;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  .quote-grid {
-    flex-direction: column;
-    transform: none !important;
-  }
-  .quote-grid .review-card {
-    min-width: 100%;
-    max-width: 100%;
-  }
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 .quote {
