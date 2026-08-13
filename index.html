@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Chakra+Petch:wght@600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="styles.css?v=6" />
 </head>
 <body>
 <div class="grain" aria-hidden="true"></div>
@@ -27,7 +27,7 @@
   <nav class="nav-links" aria-label="Primarno">
     <a href="#services">Usluge</a>
     <a href="#process">Proces</a>
-    <!-- <a href="#testimonials">Recenzije</a> -->
+    <a href="#testimonials">Recenzije</a>
     <a href="#contact">Kontakt</a>
   </nav>
 
@@ -46,7 +46,7 @@
 <nav class="mobile-menu" id="mobile-menu" aria-label="Mobilna navigacija">
   <a href="#services">Usluge</a>
   <a href="#process">Proces</a>
-  <!-- <a href="#testimonials">Recenzije</a> -->
+  <a href="#testimonials">Recenzije</a>
   <a href="#contact">Kontakt</a>
   <a href="#contact" class="btn btn-primary btn-sm">
     <span>Pokreni projekt</span>
@@ -270,7 +270,7 @@
       <div class="step-item">
         <span class="step-num">03</span>
         <h4>Izrada</h4>
-        <p>Radimo u tjednim ciklusima. Svaki tjedan vidiš napredak i daješ povratnu informaciju.</p>
+        <p>Krećemo s izradom. Redovno ti šaljemo napredak i uključujemo tvoje povratne informacije.</p>
       </div>
     </div>
   </div>
@@ -328,64 +328,41 @@
 </section>
 
 <!-- ───────────── RECENZIJE ───────────── -->
-<section class="testimonials" id="testimonials" style="display:none">
+<section class="testimonials" id="testimonials">
   <div class="container">
-    <div class="testimonial-head">
-      <article class="kpi-card">
-        <div class="kpi-row">
-          <div class="avatars">
-            <span style="background:linear-gradient(135deg,#38BDF8,#a855f7)">L</span>
-            <span style="background:linear-gradient(135deg,#60a5fa,#a855f7)">M</span>
-            <span style="background:linear-gradient(135deg,#34d399,#06b6d4)">D</span>
-          </div>
-          <div>
-            <strong>4,9 / 5</strong>
-            <em>Od preko 80 osnivača</em>
-          </div>
-        </div>
-        <hr/>
-        <div class="kpi-grid">
-          <div><strong>+126%</strong><em>Prosj. organski promet</em></div>
-          <div><strong>+38%</strong><em>Prosj. rast konverzije</em></div>
-        </div>
-        <ul class="kpi-tags">
-          <li><i class="dot"></i> Web razvoj</li>
-          <li><i class="dot"></i> SEO i plaćeno</li>
-          <li><i class="dot"></i> AI workflowi</li>
-        </ul>
-      </article>
-
-      <div class="testimonial-intro">
-        <h2>Čuj naše zadovoljne klijente — <em>prave priče o uspjehu.</em></h2>
-      </div>
-    </div>
+    <h2 class="testimonials-heading">Što klijenti kažu <em>o suradnji s nama.</em></h2>
 
     <div class="quote-grid">
-      <figure class="quote">
-        <div class="stars" aria-label="5 zvjezdica">★★★★★</div>
-        <blockquote>"Vrlo profesionalni i orijentirani na rezultat. Stručnost Code Studia u brendiranju i sadržaju pomogla nam je izgraditi snažan online identitet — i pipeline koji se sam hrani."</blockquote>
-        <figcaption>
-          <span class="avatar" style="background:linear-gradient(135deg,#fb7185,#a855f7)">J</span>
-          <div><strong>James Peterson</strong><em>COO · Brightline</em></div>
-        </figcaption>
+      <figure class="quote review-card">
+        <div class="review-logo review-logo-round">
+          <img src="zadarregion.png" alt="Zadar Region" />
+        </div>
+        <span class="review-name">Turistička zajednica zadarske županije</span>
+        <blockquote>"Trebali smo partnera koji razumije turizam i digitalni marketing. Code Studio je isporučio stranicu koja privlači posjetitelje i pretvara ih u goste — sve uz odličnu komunikaciju od početka do kraja."</blockquote>
       </figure>
 
-      <figure class="quote">
-        <div class="stars" aria-label="5 zvjezdica">★★★★★</div>
-        <blockquote>"Potpuno su transformirali našu online prisutnost. Strategije digitalnog marketinga pomogle su nam udvostručiti prihod u šest mjeseci — a AI workflow koji su isporučili uštedio nam je zapošljavanje."</blockquote>
-        <figcaption>
-          <span class="avatar" style="background:linear-gradient(135deg,#60a5fa,#22d3ee)">E</span>
-          <div><strong>Emma Richard</strong><em>CEO · Nexatech</em></div>
-        </figcaption>
+      <figure class="quote review-card">
+        <div class="review-logo review-logo-lg">
+          <img src="Taxi-Pio-Logotip-navigacija.webp" alt="Taxi Pio" />
+        </div>
+        <span class="review-name">Taxi Pio</span>
+        <blockquote>"Otkad Code Studio vodi naše Google Ads kampanje, broj poziva i rezervacija je znatno porastao. Profesionalan pristup, brzi rezultati i uvijek dostupni za pitanja."</blockquote>
       </figure>
 
-      <figure class="quote">
-        <div class="stars" aria-label="5 zvjezdica">★★★★★</div>
-        <blockquote>"Surađivali smo s mnogim agencijama prije — Code Studio se izdvaja. Njihov pristup temeljen na podacima i kreativna rješenja dali su nam prednost pred konkurentima koje godinama jurimo."</blockquote>
-        <figcaption>
-          <span class="avatar" style="background:linear-gradient(135deg,#34d399,#06b6d4)">D</span>
-          <div><strong>David Mont</strong><em>Direktor marketinga · Mercura</em></div>
-        </figcaption>
+      <figure class="quote review-card">
+        <div class="review-logo">
+          <img src="palacinkabarleo.png" alt="Palačinka Bar Leo" />
+        </div>
+        <span class="review-name">Palačinka Bar Leo</span>
+        <blockquote>"Od prve ideje do završnog rješenja sve je teklo glatko. Web stranica danas lijepo priča priču našeg bara i jasno predstavlja ono što radimo."</blockquote>
+      </figure>
+
+      <figure class="quote review-card">
+        <div class="review-logo review-logo-lg">
+          <img src="infotelplus.png" alt="Infotel Plus" />
+        </div>
+        <span class="review-name">Infotel Plus</span>
+        <blockquote>"Brzo, čisto i točno onako kako smo zamislili. Stranica radi odlično i klijenti nas lako pronađu."</blockquote>
       </figure>
     </div>
   </div>
@@ -514,6 +491,6 @@
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js?v=3"></script>
 </body>
 </html>

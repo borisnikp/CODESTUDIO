@@ -156,7 +156,6 @@
     { sel: '.service-grid > .service',     stagger: 90  },
     { sel: '.step-item',                    stagger: 110 },
     { sel: '.case-grid > .case',           stagger: 130 },
-    { sel: '.quote-grid > .quote',         stagger: 120 },
     { sel: '.kpi-card, .testimonial-intro',stagger: 140 },
     { sel: '.faq-cols > div',              stagger: 120 },
     { sel: '.faq details',                 stagger: 60  },
@@ -338,6 +337,35 @@
     onParallax();
     window.addEventListener('scroll', () => {
       if (!ticking) { requestAnimationFrame(onParallax); ticking = true; }
+    }, { passive: true });
+  }
+
+  /* ── 16. Horizontal scroll testimonials ──────────── */
+  const testimonialsSection = $('.testimonials');
+  const quoteGrid = $('.quote-grid');
+  if (testimonialsSection && quoteGrid && !matchMedia('(max-width: 720px)').matches) {
+    const setHeight = () => {
+      const scrollDist = quoteGrid.scrollWidth;
+      testimonialsSection.style.height = (window.innerHeight + scrollDist) + 'px';
+    };
+    setHeight();
+    window.addEventListener('resize', setHeight);
+
+    let hTick = false;
+    window.addEventListener('scroll', () => {
+      if (!hTick) {
+        requestAnimationFrame(() => {
+          const rect = testimonialsSection.getBoundingClientRect();
+          const scrolled = -rect.top;
+          const maxShift = quoteGrid.scrollWidth - window.innerWidth + 40;
+          const scrollRange = quoteGrid.scrollWidth;
+          const progress = Math.max(0, Math.min(scrolled / scrollRange, 1));
+          const tx = progress * Math.max(0, maxShift);
+          quoteGrid.style.transform = `translateX(-${tx}px)`;
+          hTick = false;
+        });
+        hTick = true;
+      }
     }, { passive: true });
   }
 })();
